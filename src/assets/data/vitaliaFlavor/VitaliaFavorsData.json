@@ -1,16 +1,19 @@
 {
-    "vitaliaFlavors": [
-        {
-            "flavorName": "Fresa",
-            "flavorTitle": "Vitalínea® Bebible Fresa 217 gr."
-        },
-        {
-            "flavorName": "Guayaba",
-            "flavorTitle": "Vitalínea® Bebible Guayaba 217 gr."
-        },
-        {
-            "flavorName": "Toronja",
-            "flavorTitle": "Vitalínea® Bebible Toronja 217 gr."
-        }
-    ]
+  "vitaliaFlavors": [
+    {
+      "flavorName": "Fresa",
+      "flavorTitle": "Vitalínea® Bebible Fresa 217 gr.",
+      "flavorDescription": "¡La presentación ideal para llevar contigo! Vitalínea bebible es la opción si eres de las personas que siempre están activas y quieren probar algo sano, rico y práctico."
+    },
+    {
+      "flavorName": "Guayaba",
+      "flavorTitle": "Vitalínea® Bebible Guayaba 217 gr.",
+      "flavorDescription": "¡La presentación ideal para llevar contigo! Vitalínea bebible es la opción si eres de las personas que siempre están activas y quieren probar algo sano, rico y práctico."
+    },
+    {
+      "flavorName": "Toronja",
+      "flavorTitle": "Vitalínea® Bebible Toronja 217 gr.",
+      "flavorDescription": "¡La presentación ideal para llevar contigo! Vitalínea bebible es la opción si eres de las personas que siempre están activas y quieren probar algo sano, rico y práctico."
+    }
+  ]
 }

@@ -1,5 +1,6 @@
-body {
-  max-width: 100%;
+body,
+main,
+html {
   overflow-x: hidden;
 }
 
@@ -21,6 +22,9 @@ button {
 .NavBar__container {
   height: 12rem;
   width: 100%;
+  background: rgba(255, 255, 255, 0.61);
+  -webkit-backdrop-filter: blur(10.5px);
+          backdrop-filter: blur(10.5px);
   position: absolute;
   left: 0;
   transition: all 0.5s;
@@ -46,9 +50,13 @@ button {
 
 @media screen and (min-width: 768px) {
   .NavBar__container {
-    position: inherit;
+    position: unset;
     height: inherit;
     width: 52%;
+    background: none;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+    left: unset;
   }
   .NavBar__container .NavBarList__container {
     flex-direction: row;
@@ -64,15 +72,28 @@ button {
 @media screen and (min-width: 1600px) {
   .NavBar__container {
     width: 37%;
+    background: none;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
   }
 }
 .Header__wrapper {
-  background: rgba(255, 255, 255, 0.61);
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.12);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(9.2px);
-          backdrop-filter: blur(9.2px);
+  -webkit-backdrop-filter: blur(10.5px);
+          backdrop-filter: blur(10.5px);
 }
 
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .Header__wrapper {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
 .Header__container {
   padding: 1rem;
   display: flex;
@@ -117,7 +138,7 @@ button {
   transition: all 0.2s ease-out;
 }
 .MobileMenu__icon .menuClicked {
-  background: transparent;
+  width: 0;
 }
 .MobileMenu__icon .menuClicked::before {
   top: 0;
@@ -136,5 +157,167 @@ button {
   }
   .MobileMenu__icon {
     display: none;
+  }
+}
+.Hero__container {
+  padding: 6rem 1rem 0 1rem;
+  height: 775px;
+  background-image: linear-gradient(180deg, #f9e6e6, #ebacac);
+  box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.09);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%);
+  position: relative;
+}
+
+.HeroInfoContent__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.HeroInfoContent-img__wrapper {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.HeroInfoContent-img__wrapper img {
+  width: 14rem;
+}
+
+.HeroBuyButton__wrapper {
+  margin-top: 1rem;
+  width: 100%;
+}
+.HeroBuyButton__wrapper button {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 4px;
+  background-color: #78246d;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 2s ease-in;
+}
+.HeroBuyButton__wrapper button:hover {
+  background: linear-gradient(225deg, #78246d 0%, #b381ac 100%);
+}
+
+.HeroCertificationIcons__container {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.strawberry1__hero {
+  top: 25px;
+  right: -126px;
+  width: 251px;
+  height: 190px;
+}
+
+.strawberry6__hero {
+  top: 75px;
+  left: -58px;
+  width: 126px;
+  height: 243px;
+}
+
+@media screen and (min-width: 768px) {
+  .Hero__container {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);
+    height: 668px;
+  }
+  .HeroInfoContent__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .HeroInfoContent-img__wrapper {
+    width: 20%;
+  }
+  .HeroInfoContent-img__wrapper img {
+    width: 22rem;
+  }
+  .strawberry1__hero {
+    top: -102px;
+    right: 143px;
+    width: 471px;
+    height: 455px;
+  }
+  .strawberry6__hero {
+    top: -19px;
+    left: 162px;
+    width: 117px;
+    height: 186px;
+  }
+  .strawberry2__hero {
+    top: 519px;
+    right: 106px;
+    width: 139px;
+    height: 175px;
+  }
+}
+.Strawberry__container {
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.HeroFlavorInfoButtons__container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+.HeroFlavorInfoButtons__container .p {
+  font-weight: 600;
+}
+.HeroFlavorInfoButtons__container .FlavorButtons__container button {
+  width: 5rem;
+  height: 1.3rem;
+  cursor: pointer;
+  background-color: transparent;
+  margin-left: 0.5rem;
+  border: 1px solid rgba(155, 155, 155, 0.5607843137);
+  border-radius: 10px;
+  font-weight: 600;
+  transition: background-color 1s ease;
+}
+.HeroFlavorInfoButtons__container .FlavorButtons__container button:hover {
+  background-color: rgba(255, 0, 0, 0.1019607843) !important;
+}
+
+.HeroFlavorInfo__container {
+  margin-top: -5rem;
+}
+
+.selectecButton {
+  background-color: rgba(255, 0, 0, 0.1019607843) !important;
+}
+
+.HeroFlavorInfoText__container .FlavorInfoText--title {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #78246d;
+}
+.HeroFlavorInfoText__container .FlavorInfoText--description {
+  width: 90%;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .HeroFlavorInfoButtons__container {
+    justify-content: unset;
+  }
+  .HeroInfoContent__container {
+    width: 45%;
+    align-items: start;
+  }
+  .HeroBuyButton__wrapper {
+    width: 16rem;
   }
 }/*# sourceMappingURL=styles.css.map */

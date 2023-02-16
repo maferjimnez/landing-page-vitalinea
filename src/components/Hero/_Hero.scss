@@ -1,0 +1,105 @@
+.Hero__container {
+  padding: 6rem 1rem 0 1rem;
+  height: 775px;
+  background-image: linear-gradient(180deg, #f9e6e6, #ebacac);
+  box-shadow: 0 14px 44px 0 rgb(0 0 0 / 9%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%);
+  position: relative;
+}
+
+.HeroInfoContent__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.HeroInfoContent-img__wrapper {
+  height: fit-content;
+  margin-left: 4rem;
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 14rem;
+  }
+}
+
+.HeroBuyButton__wrapper {
+  margin-top: 1rem;
+  width: 100%;
+  button {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 4px;
+    background-color: $fontColorPurple;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 2s ease-in;
+
+    &:hover {
+      background: linear-gradient(225deg, #78246d 0%, #b381ac 100%);
+    }
+  }
+}
+
+.HeroCertificationIcons__container {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.strawberry1__hero {
+  top: 25px;
+  right: -126px;
+  width: 251px;
+  height: 190px;
+}
+
+.strawberry6__hero {
+  top: 75px;
+  left: -58px;
+  width: 126px;
+  height: 243px;
+}
+
+@media screen and (min-width: $avobe768) {
+  .Hero__container {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);
+    height: 668px;
+  }
+  .HeroInfoContent__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .HeroInfoContent-img__wrapper {
+    width: 20%;
+    img {
+      width: 22rem;
+    }
+  }
+
+  .strawberry1__hero {
+    top: -102px;
+    right: 143px;
+    width: 471px;
+    height: 455px;
+  }
+
+  .strawberry6__hero {
+    top: -19px;
+    left: 162px;
+    width: 117px;
+    height: 186px;
+  }
+
+  .strawberry2__hero {
+    top: 519px;
+    right: 106px;
+    width: 139px;
+    height: 175px;
+  }
+}

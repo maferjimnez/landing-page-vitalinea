@@ -1,0 +1,60 @@
+.HeroFlavorInfoButtons__container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+
+  .p {
+    font-weight: 600;
+  }
+
+  .FlavorButtons__container button {
+    width: 5rem;
+    height: 1.3rem;
+    cursor: pointer;
+    background-color: transparent;
+    margin-left: 0.5rem;
+    border: 1px solid #9b9b9b8f;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: background-color 1s ease;
+
+    &:hover {
+      background-color: #ff00001a !important;
+    }
+  }
+}
+
+.HeroFlavorInfo__container {
+  margin-top: -5rem;
+}
+
+.selectecButton {
+  background-color: #ff00001a !important;
+}
+
+.HeroFlavorInfoText__container {
+  .FlavorInfoText--title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: $fontColorPurple;
+  }
+
+  .FlavorInfoText--description {
+    width: 90%;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: $avobe768) {
+  .HeroFlavorInfoButtons__container {
+    justify-content: unset;
+  }
+
+  .HeroInfoContent__container {
+    width: 45%;
+    align-items: start;
+  }
+  .HeroBuyButton__wrapper {
+    width: 16rem;
+  }
+}

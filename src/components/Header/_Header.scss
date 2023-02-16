@@ -1,6 +1,7 @@
 .Header__wrapper {
-  position: absolute;
   width: 100%;
+  position: absolute;
+  z-index: 1;
   background: rgba(255, 255, 255, 0.12);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10.5px);
