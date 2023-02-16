@@ -1,55 +1,59 @@
-.NavBar__container{
-    height: 12rem;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.61);
-    position: absolute;
-    left: 0;
-    transition: all 0.5s;
+.NavBar__container {
+  height: 12rem;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.61);
+  backdrop-filter: blur(10.5px);
+  position: absolute;
+  left: 0;
+  transition: all 0.5s;
 }
 
-.NavBarList__container{
+.NavBarList__container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hidden {
+  position: absolute;
+  left: -200rem;
+  transition: all 0.5s;
+}
+
+.NavBar_socials {
+  display: none;
+}
+
+@media screen and (min-width: $avobe768) {
+  .NavBar__container {
+    position: unset;
+    height: inherit;
+    width: 52%;
+    background: none;
+    backdrop-filter: none;
+    left: unset;
+
+    .NavBarList__container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .NavBar_socials {
     display: flex;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+
+    a:nth-child(2) {
+      margin: 0 1rem;
+    }
+  }
 }
 
-.hidden{
-    position: absolute;
-    left: -200rem;
-    transition: all 0.5s;
-}
-
-.NavBar_socials{
-    display: none;
-}
-
-@media screen and (min-width: $avobe768){
-    .NavBar__container{
-        position: inherit;
-        height: inherit;
-        width: 52%;
-
-        .NavBarList__container{
-            flex-direction: row;
-            justify-content: space-between;
-        }
-    }
-
-
-    .NavBar_socials{
-        display: flex;
-
-       a:nth-child(2){
-        margin: 0 1rem;
-    }
-    }
-
-}
-
-@media screen and (min-width: $avobe1600){
-    .NavBar__container{
-        width: 37%;
-    }
+@media screen and (min-width: $avobe1600) {
+  .NavBar__container {
+    width: 37%;
+    background: none;
+    backdrop-filter: none;
+  }
 }

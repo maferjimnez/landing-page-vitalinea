@@ -1,7 +1,17 @@
-.Header__wrapper{
-        background: rgba(255, 255, 255, 0.61);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(9.2px);
+.Header__wrapper {
+  position: absolute;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.5px);
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .Header__wrapper {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
 }
 
 .Header__container {
@@ -30,27 +40,25 @@
     }
   }
 
-  .menuClicked{
-        background: transparent;
-        &::before {
-                @include burgerMenuLineClicked(rotate(-45deg));
-              }
-              &::after {
-                @include burgerMenuLineClicked(rotate(45deg));
-              }
-        
+  .menuClicked {
+    width: 0;
+    &::before {
+      @include burgerMenuLineClicked(rotate(-45deg));
+    }
+    &::after {
+      @include burgerMenuLineClicked(rotate(45deg));
+    }
   }
 }
 
+@media screen and (min-width: $avobe768) {
+  .Header__wrapper {
+    padding: 0rem 5rem;
+    display: flex;
+    justify-content: space-between;
+  }
 
-@media screen and (min-width: $avobe768){
-        .Header__wrapper{
-                padding: 0rem 5rem;
-                display: flex;
-                justify-content: space-between;
-        }
-
-        .MobileMenu__icon{
-                 display: none;
-        }
+  .MobileMenu__icon {
+    display: none;
+  }
 }
