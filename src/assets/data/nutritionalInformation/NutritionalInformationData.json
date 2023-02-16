@@ -1,0 +1,48 @@
+{
+    "nutritionalInformation" : [
+        {
+            "dataType": "Contenido energético kJ/kcal",
+            "value": "413,2/97,9"
+        },
+        {
+            "dataType": "Proteínas (g)",
+            "value": "5.3"
+        },
+        {
+            "dataType": "Grasas (lípidos) (g)",
+            "value": "2.1"
+        },
+        {
+            "dataType": "Grasas saturadas (g)",
+            "value": "1.4"
+        },
+        {
+            "dataType": "Carbohidratos (Hidratos de carbono) (g)",
+            "value": "12.4"
+        },
+        {
+            "dataType": "Azúcares (g)",
+            "value": "7.7"
+        },
+        {
+            "dataType": "Azúcares añadidos (g)",
+            "value": "0.1"
+        },
+        {
+            "dataType": "Fibra dietética (g)",
+            "value": "0.0"
+        },
+        {
+            "dataType": "Sodio (mg)",
+            "value": "92.7"
+        },
+        {
+            "dataType": "Calcio (mg)",
+            "value": "199.6"
+        },
+        {
+            "dataType": "%VNR*",
+            "value": "22"
+        }
+    ]
+}
