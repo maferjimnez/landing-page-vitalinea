@@ -12,9 +12,9 @@ const NavBar = (props) => {
         <li className='NavBar__item'><a href="">Disfruta cuidarte</a></li>
         <li className='NavBar__item'><a href="">Blog</a></li>
         <li className='NavBar_socials'>
-            <a href="https://www.facebook.com/VitalineaMX/"><img src={facebookIcon} alt="Facebook logo icon" /></a>
-            <a href="https://www.instagram.com/vitalineamx/"><img src={instagramIcon} alt="Instagram logo icon" /></a>
-            <a href="https://www.youtube.com/channel/UCQ9QUtKWouX6TaAXyeOwb_Q"><img src={youtubeIcon} alt="Youtube logo icon" /></a>
+            <a href="https://www.facebook.com/VitalineaMX/" target="_blank"><img src={facebookIcon} alt="Facebook logo icon" /></a>
+            <a href="https://www.instagram.com/vitalineamx/" target="_blank"><img src={instagramIcon} alt="Instagram logo icon" /></a>
+            <a href="https://www.youtube.com/channel/UCQ9QUtKWouX6TaAXyeOwb_Q" target="_blank"><img src={youtubeIcon} alt="Youtube logo icon" /></a>
         </li>
      </ul>
     </nav>
