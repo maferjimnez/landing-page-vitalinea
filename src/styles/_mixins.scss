@@ -1,0 +1,16 @@
+@mixin burgerMenuLine($positionTop) {
+  background-color: #B98B3C;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 22px;
+  border-radius: 12px;
+  position: absolute;
+  top: $positionTop;
+  right: 0;
+  transition: all 0.2s ease-out;
+}
+@mixin burgerMenuLineClicked($transform) {
+  top: 0;
+  transform: $transform;
+}
