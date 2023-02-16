@@ -1,0 +1,140 @@
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.NavBar__container {
+  height: 12rem;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.NavBarList__container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hidden {
+  position: absolute;
+  left: -200rem;
+  transition: all 0.5s;
+}
+
+.NavBar_socials {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .NavBar__container {
+    position: inherit;
+    height: inherit;
+    width: 52%;
+  }
+  .NavBar__container .NavBarList__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .NavBar_socials {
+    display: flex;
+  }
+  .NavBar_socials a:nth-child(2) {
+    margin: 0 1rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .NavBar__container {
+    width: 37%;
+  }
+}
+.Header__wrapper {
+  background: rgba(255, 255, 255, 0.61);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(9.2px);
+          backdrop-filter: blur(9.2px);
+}
+
+.Header__container {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.MobileMenu__icon {
+  cursor: pointer;
+}
+.MobileMenu__icon .MobileMenu__icon--line {
+  background-color: #b98b3c;
+  border-radius: 12px;
+  display: block;
+  width: 18px;
+  height: 2px;
+  position: relative;
+  transition: all 0.2s ease-out;
+}
+.MobileMenu__icon .MobileMenu__icon--line::before {
+  background-color: #B98B3C;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 22px;
+  border-radius: 12px;
+  position: absolute;
+  top: 6px;
+  right: 0;
+  transition: all 0.2s ease-out;
+}
+.MobileMenu__icon .MobileMenu__icon--line::after {
+  background-color: #B98B3C;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 22px;
+  border-radius: 12px;
+  position: absolute;
+  top: -6px;
+  right: 0;
+  transition: all 0.2s ease-out;
+}
+.MobileMenu__icon .menuClicked {
+  background: transparent;
+}
+.MobileMenu__icon .menuClicked::before {
+  top: 0;
+  transform: rotate(-45deg);
+}
+.MobileMenu__icon .menuClicked::after {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+@media screen and (min-width: 768px) {
+  .Header__wrapper {
+    padding: 0rem 5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .MobileMenu__icon {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */
