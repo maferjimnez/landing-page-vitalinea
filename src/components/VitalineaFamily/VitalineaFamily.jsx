@@ -8,13 +8,18 @@ const VitalineaFamily = () => {
     <section className="VitalineaFamily__container" id="VitalineaFamily">
       <h2 className="VitalineaFamily-title">La Familia Vitalínea</h2>
       <div className="VitaliaItems__container">
-        {vitalineaFamilyData.map((item) => {
+        {vitalineaFamilyData.map((item, index) => {
           return (
-            <VitalineaItem
-              src={item.yogurtImg}
-              alt={item.yogurtName}
-              name={item.yogurtName}
-            />
+            <div
+              className="VitalineaItem__wrapper"
+              key={`vitalineaItem-${index}`}
+            >
+              <VitalineaItem
+                src={item.yogurtImg}
+                alt={item.yogurtName}
+                name={item.yogurtName}
+              />
+            </div>
           );
         })}
       </div>

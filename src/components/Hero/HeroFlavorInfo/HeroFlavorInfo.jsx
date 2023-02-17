@@ -23,7 +23,9 @@ const HeroFlavorInfo = () => {
                 key={`flavor-${index}`}
                 index={index}
                 value={index}
-                className={index === selectedButton && "selectecButton"}
+                className={
+                  index === selectedButton ? "selectecButton" : undefined
+                }
                 onClick={(e) => {
                   handleChangeFlavor(flavor, e);
                 }}

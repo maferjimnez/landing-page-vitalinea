@@ -6,14 +6,16 @@ const NutritionalInfoTable = (props) => {
   return (
     <div className="NutritionalInfoTable__container">
       <table className="NutritionalInfoTable">
-        {data.map((item) => {
-          return (
-            <tr>
-              <td>{item.dataType}</td>
-              <td>{item.value}</td>
-            </tr>
-          );
-        })}
+        <tbody>
+          {data.map((item, index) => {
+            return (
+              <tr key={`nutritionalInfoItem-${index}`}>
+                <td>{item.dataType}</td>
+                <td>{item.value}</td>
+              </tr>
+            );
+          })}
+        </tbody>
       </table>
     </div>
   );
