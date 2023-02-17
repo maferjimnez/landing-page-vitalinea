@@ -1,7 +1,5 @@
 import React from "react";
 
-import gg from "../../assets/images/vitalia-family/greek-yogurt.png";
-
 const VitalineaItem = (props) => {
   const { src, alt, name } = props;
 

@@ -21,7 +21,7 @@ button {
 
 .StrawberriesBackground__container {
   width: 100vw;
-  height: 500vh;
+  height: 190vh;
   position: absolute;
   z-index: 1;
   overflow-x: hidden;
@@ -545,5 +545,41 @@ button {
   }
   .VitalineaItem__container .VitalineaItem--img__wrapper img {
     width: 13rem;
+  }
+}
+.Footer__container {
+  padding: 1.5rem 1rem;
+}
+
+.FooterIcons__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.FooterTermsAndConditions__container {
+  text-align: center;
+  font-weight: 600;
+}
+.FooterTermsAndConditions__container p:first-child {
+  font-size: 11px;
+}
+.FooterTermsAndConditions__container p:nth-child(2) {
+  font-size: 12px;
+  margin: 0 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .Footer__container {
+    position: relative;
+  }
+  .FooterTermsAndConditions__container {
+    text-align: start;
+    position: absolute;
+    top: 29px;
+    left: 85px;
+  }
+  .FooterTermsAndConditions__container p:nth-child(2) {
+    margin: 5px 0;
   }
 }/*# sourceMappingURL=styles.css.map */
