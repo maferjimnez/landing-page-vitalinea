@@ -2,15 +2,15 @@
   "vitalineaFamily": [
     {
       "yogurtName": "Vitalínea Griego",
-      "yogurtImg": "/vitalia-family/greek-yogurt.png"
+      "yogurtImg": "./vitalia-family/greek-yogurt.png"
     },
     {
       "yogurtName": "Vitalínea Sin Azúcar",
-      "yogurtImg": "/vitalia-family/natural-yogurt.png"
+      "yogurtImg": "./vitalia-family/natural-yogurt.png"
     },
     {
       "yogurtName": "Vitalínea Bebible",
-      "yogurtImg": "/vitalia-family/strawberry-drinkable-bottle@2.png"
+      "yogurtImg": "./vitalia-family/strawberry-drinkable-bottle@2.png"
     }
   ]
 }
