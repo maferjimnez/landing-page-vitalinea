@@ -1,0 +1,88 @@
+.StrawberriesBackground__container {
+  width: 100vw;
+  height: 500vh;
+  position: absolute;
+  z-index: 1;
+  overflow-x: hidden;
+  pointer-events: none;
+}
+
+.strawberry1__hero {
+  top: 25px;
+  right: -126px;
+  width: 251px;
+  height: 190px;
+}
+
+.strawberry6__hero {
+  top: 75px;
+  left: -58px;
+  width: 126px;
+  height: 243px;
+}
+
+.strawberry5__nutritionalInfo {
+  width: 129px;
+  height: 150px;
+  top: 796px;
+  right: -68px;
+}
+.strawberry3__nutritionalInfo {
+  width: 160px;
+  height: 129px;
+  top: 1020px;
+  left: -68px;
+}
+
+@media screen and (min-width: $avobe768) {
+  .strawberry1__hero {
+    top: -102px;
+    right: 143px;
+    width: 471px;
+    height: 455px;
+  }
+
+  .strawberry6__hero {
+    top: -19px;
+    left: 162px;
+    width: 117px;
+    height: 186px;
+  }
+
+  .strawberry2__hero {
+    top: 519px;
+    right: 106px;
+    width: 139px;
+    height: 175px;
+  }
+
+  .strawberry5__nutritionalInfo {
+    width: 187px;
+    height: 216px;
+    top: 724px;
+    right: -89px;
+  }
+
+  .strawberry3__nutritionalInfo {
+    width: 184px;
+    height: 175px;
+    top: 1020px;
+    left: -63px;
+  }
+
+  .strawberry2__nutritionalInfo {
+    width: 320px;
+    height: 406px;
+    top: 457px;
+    left: -182px;
+    filter: blur(3px);
+  }
+}
+
+@media screen and (min-width: $avobe1240) {
+  .strawberry4__nutritionalInfo {
+    width: 174px;
+    height: 204px;
+    top: 760px;
+  }
+}
