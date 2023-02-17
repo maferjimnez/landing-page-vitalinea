@@ -1,5 +1,5 @@
 import React from "react";
-import Strawberry from "../commons/Strawberry/Strawberry";
+import AnimatedItem from "../commons/AnimatedItem/AnimatedItem";
 import HeroFlavorInfo from "./HeroFlavorInfo/HeroFlavorInfo";
 import strawberry_drinkable_bottle from "../../assets/images/strawberry_drinkable_bottle@1.png";
 import no_sugar_ribbon from "../../assets/images/fmd_interior.png";
