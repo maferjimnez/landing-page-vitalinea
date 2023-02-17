@@ -405,7 +405,7 @@ button {
   }
 }
 .NutritionalInfo__container {
-  padding: 0 1rem;
+  padding: 0 1rem 2rem;
 }
 
 .NutritionalInfo-title {
@@ -455,7 +455,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .NutritionalInfo__container {
-    padding: 4rem 7rem;
+    padding: 4rem 7rem 2rem;
   }
   .NutritionalInfo__wrapper {
     display: flex;
@@ -477,7 +477,7 @@ button {
 }
 @media screen and (min-width: 1240px) {
   .NutritionalInfo__container {
-    padding: 4rem 15rem;
+    padding: 4rem 15rem 3rem;
   }
   .NutritionalInfo-title {
     font-size: 32px;
@@ -489,6 +489,61 @@ button {
 }
 @media screen and (min-width: 1600px) {
   .NutritionalInfo__container {
-    padding: 4rem 32rem;
+    padding: 4rem 32rem 3rem;
+  }
+}
+.VitalineaFamily__container {
+  height: 500px;
+  padding: 2rem 0 4rem 1rem;
+  background: url("../assets/backgrounds/pink-textured-background.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.VitalineaFamily-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 100;
+  color: #78246d;
+}
+
+.VitaliaItems__container {
+  align-items: flex-end;
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  padding-bottom: 25px;
+}
+
+.VitalineaItem__container {
+  text-align: center;
+}
+.VitalineaItem__container .VitalineaItem--img__wrapper img {
+  width: 9rem;
+}
+.VitalineaItem__container .VitalineaItem--name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #78246d;
+}
+
+@media screen and (min-width: 481px) {
+  .VitaliaItems__container {
+    justify-content: center;
+    gap: 28px;
+    overflow-x: hidden;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .VitaliaItems__container {
+    gap: 10rem;
+    padding-bottom: 0;
+  }
+  .VitalineaItem__container {
+    text-align: center;
+  }
+  .VitalineaItem__container .VitalineaItem--img__wrapper img {
+    width: 13rem;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,62 @@
+.VitalineaFamily__container {
+  height: 500px;
+  padding: 2rem 0 4rem 1rem;
+  background: url("../assets/backgrounds/pink-textured-background.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.VitalineaFamily-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 100;
+  color: $fontColorPurple;
+}
+
+.VitaliaItems__container {
+  align-items: flex-end;
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  padding-bottom: 25px;
+}
+
+.VitalineaItem__container {
+  text-align: center;
+  .VitalineaItem--img__wrapper {
+    img {
+      width: 9rem;
+    }
+  }
+
+  .VitalineaItem--name {
+    font-size: 13px;
+    font-weight: 600;
+    color: $fontColorPurple;
+  }
+}
+
+@media screen and (min-width: $avobe481) {
+  .VitaliaItems__container {
+    justify-content: center;
+    gap: 28px;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (min-width: $avobe1240) {
+  .VitaliaItems__container {
+    gap: 10rem;
+    padding-bottom: 0;
+  }
+
+  .VitalineaItem__container {
+    text-align: center;
+    .VitalineaItem--img__wrapper {
+      img {
+        width: 13rem;
+      }
+    }
+  }
+}

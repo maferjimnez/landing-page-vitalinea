@@ -1,5 +1,5 @@
 .NutritionalInfo__container {
-  padding: 0 1rem;
+  padding: 0 1rem 2rem;
 }
 .NutritionalInfo-title {
   font-size: 20px;
@@ -50,7 +50,7 @@
 
 @media screen and (min-width: $avobe768) {
   .NutritionalInfo__container {
-    padding: 4rem 7rem;
+    padding: 4rem 7rem 2rem;
   }
 
   .NutritionalInfo__wrapper {
@@ -77,7 +77,7 @@
 
 @media screen and (min-width: $avobe1240) {
   .NutritionalInfo__container {
-    padding: 4rem 15rem;
+    padding: 4rem 15rem 3rem;
   }
 
   .NutritionalInfo-title {
@@ -91,6 +91,6 @@
 
 @media screen and (min-width: $avobe1600) {
   .NutritionalInfo__container {
-    padding: 4rem 32rem;
+    padding: 4rem 32rem 3rem;
   }
 }
