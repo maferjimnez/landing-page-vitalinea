@@ -9,7 +9,6 @@ const VitalineaFamily = () => {
       <h2 className="VitalineaFamily-title">La Familia Vitalínea</h2>
       <div className="VitaliaItems__container">
         {vitalineaFamilyData.map((item) => {
-          console.log(item);
           return (
             <VitalineaItem
               src={item.yogurtImg}

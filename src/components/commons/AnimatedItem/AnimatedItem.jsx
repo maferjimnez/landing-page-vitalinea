@@ -25,7 +25,6 @@ const AnimatedItem = ({ from, to, children, transition }) => {
   const ref = useRef(null);
   const onScreen = useElementOnScreen(ref);
 
-  console.log("onScreen", onScreen);
   return (
     <div
       ref={ref}
