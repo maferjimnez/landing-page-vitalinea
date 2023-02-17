@@ -1,8 +1,8 @@
 # Vitalinea - Landing page
-Challenge para IA Interactive.
+Challenge para [IA Interactive.](https://www.ia.com.mx/)
 
 ## Sobre el challenge:
-El desafío está enfocado en el maquetado de la landing page de una marca de yogurt, siguiendo las guías visuales de una interfaz de usuario otorgada y desarrollando funcionalidades de navegación y compatibilidad con múltiples exploradores y dispositivos.
+El desafío está enfocado en el maquetado de la landing page para una marca de yogurt, siguiendo las guías visuales de una interfaz de usuario otorgada y desarrollando funcionalidades de navegación y compatibilidad con múltiples exploradores y dispositivos.
 <br></br>
 Link a la demo: [Vitalinea](https://maferjimnez.github.io/landing-page-vitalinea/)
 
@@ -12,6 +12,8 @@ Link a la demo: [Vitalinea](https://maferjimnez.github.io/landing-page-vitalinea
 
 ## Herramientas y recursos:
 * Figma
+* Github pages
+* Live Sass Compiler
 
 ## Lauch
 Para correr el proyecto:
