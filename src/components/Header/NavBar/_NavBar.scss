@@ -1,7 +1,7 @@
 .NavBar__container {
   height: 12rem;
   width: 100%;
-  background: rgba(255, 255, 255, 0.61);
+  background: rgba(255, 255, 255, 0.91);
   backdrop-filter: blur(10.5px);
   position: absolute;
   left: 0;
@@ -14,6 +14,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+
+  li {
+    font-weight: 600;
+  }
 }
 
 .hidden {
@@ -23,7 +27,9 @@
 }
 
 .NavBar_socials {
-  display: none;
+  width: 12rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 @media screen and (min-width: $avobe768) {
@@ -42,6 +48,7 @@
   }
 
   .NavBar_socials {
+    width: auto;
     display: flex;
 
     a:nth-child(2) {

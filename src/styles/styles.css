@@ -118,7 +118,7 @@ button {
 .NavBar__container {
   height: 12rem;
   width: 100%;
-  background: rgba(255, 255, 255, 0.61);
+  background: rgba(255, 255, 255, 0.91);
   -webkit-backdrop-filter: blur(10.5px);
           backdrop-filter: blur(10.5px);
   position: absolute;
@@ -133,6 +133,9 @@ button {
   align-items: center;
   justify-content: space-evenly;
 }
+.NavBarList__container li {
+  font-weight: 600;
+}
 
 .hidden {
   position: absolute;
@@ -141,7 +144,9 @@ button {
 }
 
 .NavBar_socials {
-  display: none;
+  width: 12rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 @media screen and (min-width: 768px) {
@@ -159,6 +164,7 @@ button {
     justify-content: space-between;
   }
   .NavBar_socials {
+    width: auto;
     display: flex;
   }
   .NavBar_socials a:nth-child(2) {
