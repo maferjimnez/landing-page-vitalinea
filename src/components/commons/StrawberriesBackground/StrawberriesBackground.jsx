@@ -41,6 +41,15 @@ const StrawberriesBackground = () => {
         src={strawberry_3}
         starwberryClassName={"strawberry3__nutritionalInfo"}
       />
+      {/* strawberries vitalinea family  */}
+      <Strawberry
+        src={strawberry_2}
+        starwberryClassName={"strawberry2__vitalineaFamily"}
+      />
+      <Strawberry
+        src={strawberry_2}
+        starwberryClassName={"strawberry2-bluried__vitalineaFamily"}
+      />
     </div>
   );
 };

@@ -83,8 +83,8 @@ button {
   }
   .strawberry3__nutritionalInfo {
     width: 184px;
-    height: 175px;
-    top: 1020px;
+    height: 199px;
+    top: 1071px;
     left: -63px;
   }
   .strawberry2__nutritionalInfo {
@@ -94,12 +94,25 @@ button {
     left: -182px;
     filter: blur(3px);
   }
+  .strawberry2-bluried__vitalineaFamily {
+    width: 320px;
+    height: 420px;
+    top: 1074px;
+    right: -136px;
+    filter: blur(3px);
+  }
 }
 @media screen and (min-width: 1240px) {
   .strawberry4__nutritionalInfo {
     width: 174px;
     height: 204px;
     top: 760px;
+  }
+  .strawberry2__vitalineaFamily {
+    width: 140px;
+    height: 175px;
+    top: 1120px;
+    left: 319px;
   }
 }
 .NavBar__container {
