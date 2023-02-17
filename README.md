@@ -4,7 +4,7 @@ Challenge para IA Interactive.
 ## Sobre el challenge:
 El desafío está enfocado en el maquetado de la landing page de una marca de yogurt, siguiendo las guías visuales de una interfaz de usuario otorgada y desarrollando funcionalidades de navegación y compatibilidad con múltiples exploradores y dispositivos.
 <br></br>
-Link a la demo [Vitalinea]()
+Link a la demo: [Vitalinea](https://maferjimnez.github.io/landing-page-vitalinea/)
 
 ## Stacks:
 * React
