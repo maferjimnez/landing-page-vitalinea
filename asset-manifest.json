@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/landing-page-vitalinea/static/css/main.833649fb.css",
-    "main.js": "/landing-page-vitalinea/static/js/main.a8fc9bd5.js",
+    "main.css": "/landing-page-vitalinea/static/css/main.c7ceed0a.css",
+    "main.js": "/landing-page-vitalinea/static/js/main.2e54740e.js",
     "static/media/strawberry_1.png": "/landing-page-vitalinea/static/media/strawberry_1.03b32ef4780da85a1f85.png",
     "static/media/pink-textured-background.png": "/landing-page-vitalinea/static/media/pink-textured-background.41ac19e375668decb91f.png",
     "static/media/strawberry_5.png": "/landing-page-vitalinea/static/media/strawberry_5.db4eabe32288702178d0.png",
@@ -11,11 +11,11 @@
     "static/media/strawberry_drinkable_bottle@1.png": "/landing-page-vitalinea/static/media/strawberry_drinkable_bottle@1.f964dfadafab4273b228.png",
     "static/media/strawberry_6.png": "/landing-page-vitalinea/static/media/strawberry_6.4eef41029c8a2f973f30.png",
     "index.html": "/landing-page-vitalinea/index.html",
-    "main.833649fb.css.map": "/landing-page-vitalinea/static/css/main.833649fb.css.map",
-    "main.a8fc9bd5.js.map": "/landing-page-vitalinea/static/js/main.a8fc9bd5.js.map"
+    "main.c7ceed0a.css.map": "/landing-page-vitalinea/static/css/main.c7ceed0a.css.map",
+    "main.2e54740e.js.map": "/landing-page-vitalinea/static/js/main.2e54740e.js.map"
   },
   "entrypoints": [
-    "static/css/main.833649fb.css",
-    "static/js/main.a8fc9bd5.js"
+    "static/css/main.c7ceed0a.css",
+    "static/js/main.2e54740e.js"
   ]
 }
