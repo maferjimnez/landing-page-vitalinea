@@ -1,3 +1,6 @@
+.Hero__wrapper {
+  filter: drop-shadow(0px 14px 44px rgb(0 0 0 / 9%));
+}
 .Hero__container {
   padding: 6rem 1rem 0 1rem;
   height: 775px;
@@ -67,7 +70,7 @@
 @media screen and (min-width: $avobe768) {
   .Hero__container {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);
-    height: 668px;
+    height: 43rem;
   }
   .HeroInfoContent__wrapper {
     display: flex;

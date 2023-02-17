@@ -9,9 +9,11 @@ const NutritionalInfo = () => {
     nutritionalInformation.nutritionalInformation;
 
   return (
-    <section className="NutritionalInfo__container">
+    <section className="NutritionalInfo__container" id="NutritionalInfo">
       <div className="DownArrow__wrapper">
-        <img src={downArow} alt="Arrow pointing down icon" />
+        <a href="#NutritionalInfo">
+          <img src={downArow} alt="Arrow pointing down icon" />
+        </a>
       </div>
       <h2 className="NutritionalInfo-title">Información nutrimental</h2>
       <div className="NutritionalInfo__wrapper">

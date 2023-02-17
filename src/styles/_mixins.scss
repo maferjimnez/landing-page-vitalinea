@@ -1,5 +1,5 @@
 @mixin burgerMenuLine($positionTop) {
-  background-color: #B98B3C;
+  background-color: #b98b3c;
   content: "";
   display: block;
   height: 100%;
@@ -10,7 +10,25 @@
   right: 0;
   transition: all 0.2s ease-out;
 }
+
 @mixin burgerMenuLineClicked($transform) {
   top: 0;
   transform: $transform;
+}
+
+@mixin purpleFonts(
+  $fontSize,
+  $fontWeight,
+  $margin,
+  $textTransform,
+  $textAlign,
+  $letterSpacing
+) {
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  margin: $margin;
+  color: $fontColorPurple;
+  text-transform: $textTransform;
+  text-align: $textAlign;
+  letter-spacing: $letterSpacing;
 }

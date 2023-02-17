@@ -1,5 +1,5 @@
 .VitalineaFamily__container {
-  height: 500px;
+  height: 32rem;
   padding: 2rem 0 4rem 1rem;
   background: url("../assets/backgrounds/pink-textured-background.png");
   display: flex;
@@ -8,10 +8,7 @@
 }
 
 .VitalineaFamily-title {
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 100;
-  color: $fontColorPurple;
+  @include purpleFonts(22px, 100, unset, uppercase, center, unset);
 }
 
 .VitaliaItems__container {
@@ -46,6 +43,9 @@
 }
 
 @media screen and (min-width: $avobe1240) {
+  .VitalineaFamily__container {
+    height: 40rem;
+  }
   .VitaliaItems__container {
     gap: 10rem;
     padding-bottom: 0;
@@ -55,8 +55,22 @@
     text-align: center;
     .VitalineaItem--img__wrapper {
       img {
+        width: 16rem;
+      }
+      img:nth-child(2) {
         width: 13rem;
       }
     }
+  }
+  .VitalineaItem__container:nth-child(2) {
+    .VitalineaItem--img__wrapper {
+      img {
+        width: 13rem;
+      }
+    }
+  }
+
+  .VitalineaFamily-title {
+    @include purpleFonts(40px, 100, unset, uppercase, center, unset);
   }
 }

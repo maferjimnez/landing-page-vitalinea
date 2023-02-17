@@ -5,7 +5,7 @@ import vitalineaFamily from "../../assets/data/vitalineaFamily/VitalineaFamilyDa
 const VitalineaFamily = () => {
   const vitalineaFamilyData = vitalineaFamily.vitalineaFamily;
   return (
-    <section className="VitalineaFamily__container">
+    <section className="VitalineaFamily__container" id="VitalineaFamily">
       <h2 className="VitalineaFamily-title">La Familia Vitalínea</h2>
       <div className="VitaliaItems__container">
         {vitalineaFamilyData.map((item) => {

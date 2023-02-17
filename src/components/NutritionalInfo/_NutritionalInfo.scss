@@ -2,10 +2,7 @@
   padding: 0 1rem 2rem;
 }
 .NutritionalInfo-title {
-  font-size: 20px;
-  font-weight: 100;
-  margin-bottom: 1rem;
-  color: $fontColorPurple;
+  @include purpleFonts(20px, 100, 0 0 1rem, unset, unset, 3px);
 }
 
 .Ingredients-item,
@@ -70,6 +67,7 @@
   .NutritionalInfoTable__container {
     width: 50%;
   }
+
   .DownArrow__wrapper {
     margin-top: -8.5rem;
   }
@@ -77,20 +75,23 @@
 
 @media screen and (min-width: $avobe1240) {
   .NutritionalInfo__container {
-    padding: 4rem 15rem 3rem;
+    padding: 9rem 15rem 5rem;
   }
 
   .NutritionalInfo-title {
-    font-size: 32px;
-    letter-spacing: 4px;
+    @include purpleFonts(32px, 100, 0 0 2.5rem, unset, unset, 5px);
   }
   .NutritionalInfoTable__container {
     width: 57%;
+  }
+
+  .DownArrow__wrapper {
+    margin-top: -13.5rem;
   }
 }
 
 @media screen and (min-width: $avobe1600) {
   .NutritionalInfo__container {
-    padding: 4rem 32rem 3rem;
+    padding: 9rem 32rem 3rem;
   }
 }
